@@ -1,0 +1,93 @@
+.Search-body {
+  height: 150px;
+}
+
+.search-container {
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-size: 1.4rem;
+  padding: 7px 10px 7px 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid grey;
+  border-right: none;
+  /* padding-bottom: .5px; */
+}
+
+input {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-size: 1.4rem;
+  padding: 7px;
+  width: 300px;
+  border: 1px solid grey;
+  border-left: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+
+input:focus {
+  outline: none;
+}
+
+/* REFRESH BUTTON */
+
+.refresh {
+  position: relative;
+  left: 10%;
+}
+
+.refresh-icon {
+  color: grey;
+  font-size: 1.3rem;
+}
+
+.refresh-icon:hover {
+  color: rgb(208, 208, 208);
+}
+
+.refresh-icon:active {
+  color: grey;
+}
+
+input:focus,
+button:focus {
+  border-color: blue;
+  /* Add any other styling you want for the focused state */
+}
+
+
+@media screen and (max-width: 400px) {
+ 
+  .search-con {
+   
+   
+  } 
+
+  button {
+   
+    
+    font-size: 1.2rem;
+   
+   
+    /* padding-bottom: .5px; */
+  }
+
+input {
+  font-size: 1.2rem;
+  width: 200px;
+  
+}
+
+.refresh-icon {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+}
