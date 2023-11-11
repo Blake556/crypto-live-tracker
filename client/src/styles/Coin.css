@@ -91,6 +91,11 @@ P {
 }
 
 
+.default-fail-message {
+    color: red;
+}
+
+
 
 @media screen and (max-width: 400px) {
 
