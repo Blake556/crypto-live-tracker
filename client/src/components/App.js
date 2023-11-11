@@ -83,7 +83,7 @@ function App() {
   function handleSearch(event) {
     event.preventDefault();
 
-    fetch('https://btc-crypto-tracker.web.app/api/search', {
+    fetch('https://crypto-tracker-app-b564601900ec.herokuapp.com/api/search', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

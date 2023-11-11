@@ -55,6 +55,8 @@ function Coin(props) {
         <span>{coin.market_cap_change_percentage_24h}</span>
       </div> */}
 
+ 
+
       {isObjectEmpty(searchData) ? (
         coinData.map((coin, index) => (
           <div
@@ -92,7 +94,7 @@ function Coin(props) {
           <span>{searchData.priceChange24}%</span>
         </div>
       )}
-
+     
       {/* <div className="coin-data-container d-flex justify-content-between align-items-center">
         <span>2</span>
         <div className="d-flex align-items-center">
