@@ -70,7 +70,7 @@ P {
 .coin-icon {
     color: gold;
   
-    margin-right: 5px;
+    margin-right: 20px;
     width: 40px;
 }
 
@@ -92,6 +92,7 @@ P {
 
 
 .default-fail-message {
+    margin-top: 10%;
     color: red;
 }
 

@@ -82,7 +82,7 @@ function App() {
 
   function handleSearch(event) {
     event.preventDefault();
-  
+
     fetch('https://crypto-tracker-app-b564601900ec.herokuapp.com/api/search', {
       method: "POST",
       headers: {
@@ -90,20 +90,13 @@ function App() {
       },
       body: JSON.stringify({ search }),
     })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
         console.log(data);
-  
         const name = data.id;
-        const image = data.image && data.image.thumb; // Check if data.image exists
+        const image = data.image.thumb || '';
         const price = data.market_data.current_price.usd;
         const priceChange24 = data.market_data.price_change_percentage_24h;
-  
         setSearchData({
           id: name,
           image: image,
@@ -115,7 +108,7 @@ function App() {
         console.error(error);
       });
   }
-  
+
   return (
     <div className="container App">
       <div className="row header d-flex justify-content-center 

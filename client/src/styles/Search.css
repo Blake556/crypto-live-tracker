@@ -56,11 +56,11 @@ input:focus {
   color: grey;
 }
 
-input:focus,
+/* input:focus,
 button:focus {
   border-color: blue;
-  /* Add any other styling you want for the focused state */
-}
+ 
+} */
 
 
 @media screen and (max-width: 400px) {

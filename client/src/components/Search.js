@@ -35,7 +35,7 @@ function Search(props) {
             <input 
               className="" 
               type="text" 
-              placeholder="Search coin key like btc" 
+              placeholder="Search bitcoin or any crypto" 
               value={props.search} 
               onChange={handleInputChange} 
             />
